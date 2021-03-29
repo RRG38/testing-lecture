@@ -7,7 +7,7 @@ it('renders the Todos component', async () => {
   let component;
 
   jest.spyOn(axios, 'get').mockImplementation(() => {
-    Promise.resolve({
+    return Promise.resolve({
       data: [{ id: 1, title: 'test title'}]
     })
   })
